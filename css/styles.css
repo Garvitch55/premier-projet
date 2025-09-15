@@ -1,0 +1,60 @@
+table, th, td {
+    border: solid 1px black;
+    border-collapse: collapse;
+    padding: 2px;
+    text-align: center;
+}
+
+/* L'ecriture de classe ou d'id sont au format Kebabcase */
+.table-wrapper {
+    width: 50%;
+}
+
+#table-100w {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+h1{
+    /* Color : La couleur du texte */
+    color: rgb(15, 22, 126);
+    /* Text-align - > l'alignement du text*/
+    text-align: center;
+    /* couleur du fond*/
+    background-color: rgb(177, 111, 12);   
+    
+    padding: 10px;
+    text-decoration: underline;
+
+}
+
+/* ">li" Permet de sélectionner l'enfant direct de l'élément #liste_cours */
+#liste_cours > li {
+                    /* list_style permet la désactivation des puces */
+                    list-style: none;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    border: solid 1px #5bc0eb;
+                    width: fit-content;
+                    padding: 3px;
+                    border-radius: 5px;
+                    background-color: #11829e;
+}
+#liste_cours > li > a {
+                    /* enlève le souligner des liens*/
+                    text-decoration: none;
+                    color: black;
+
+}
+
+#liste_cours > li:hover {
+                   background-color: #fbb13c;
+                   border: solid 1px #ac3931;
+}
+#liste_cours > li > a:hover {
+                    color: white;
+
+}
