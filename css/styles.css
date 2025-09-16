@@ -1,3 +1,23 @@
+/*chargé la police d'écriture*/
+@font-face{
+    font-family: "Sansation";
+    src: url("../fonts/Sansation-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Tag";
+    src: url("../fonts/Tagesschrift-Regular.ttf") format("truetype");
+}
+
+
+/*mettre la police d'écriture, et celle de secours*/
+body {
+    font-family: "Sansation", sans-serif;
+}
+
+
+
+
+
 table, th, td {
     border: solid 1px black;
     border-collapse: collapse;
@@ -167,3 +187,85 @@ h5 ~ p {
     font-weight: bold;
     color: orangered;
 }
+
+/* Les pseudos éléments première lettre */
+.text-chiant::first-letter {
+    color: red;
+    font-weight: bold;
+    /* 3rem c'est 3 fois plus grand que la taille de la police de base */
+    font-size: 3rem;
+}
+
+.text-chiant {
+    font-family: "Tag", sans-serif;
+}
+
+
+
+
+#super-button {
+    border: solid 1px rgb(75, 13, 218);
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#super-button:hover {
+    border: solid 1px rgb(204, 218, 13);
+    background-color: blueviolet;
+}
+
+
+/* Pseudo élément après❤ */
+#super-button::after {
+    /* Mettre toujours la proriété content */
+    content:"❤";
+    color: orange;
+}
+
+/* Pseudo élément ❤ */
+#super-button:hover::after {
+    content: "👍";
+    /* transform fait grossir le content */
+    transform: scale(1.3);
+    display: inline-block;
+}
+
+.box p {
+    color: red;
+}
+
+.box span {
+    color: green;
+}
+
+p ~ span {
+    color: blue;
+}
+
+.container > p {
+    color: violet;
+}
+
+.container .box h2 {
+    color: orange;
+}
+
+.box h2::before {
+/* Mettre toujours la proriété content */
+    content:"→";
+}
+
+.container > p::after {
+   content:"(important)";
+   font-size: 0.5rem;
+}
+
+.box p::after {
+   content:"en italique";
+   font-style: italic;
+}
+
+
