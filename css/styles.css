@@ -44,17 +44,34 @@ textarea {
     /* Text-align - > l'alignement du text*/
     text-align: center;
     /* couleur du fond*/
-    background-color: rgb(177, 111, 12);   
-    
+    background-color: rgb(177, 111, 12);
     padding: 10px;
     text-decoration: underline;
-
 }
 
 h1 {
     text-align: center;
     text-decoration: underline;
+    font: bold;
 }
+
+h2 {
+    text-decoration: underline;
+    font: bold;
+}
+
+h3 {
+    text-decoration: underline;
+    font: bold;
+}
+
+h4 {
+    text-decoration: underline;
+    font: bold;
+}
+
+
+
 
 /* ">li" Permet de sélectionner l'enfant direct de l'élément #liste_cours */
 #liste_cours > li {
@@ -201,8 +218,6 @@ h5 ~ p {
 }
 
 
-
-
 #super-button {
     border: solid 1px rgb(75, 13, 218);
     background-color: black;
@@ -269,3 +284,82 @@ p ~ span {
 }
 
 
+
+
+/*
+___________.__                 
+\_   _____/|  |   ____ ___  ___
+ |    __)  |  | _/ __ \\  \/  /
+ |     \   |  |_\  ___/ >    < 
+ \___  /   |____/\___  >__/\_ \
+     \/              \/      \/
+*/
+
+
+/* C'est toujours le conteneur des élémentrs qui a le display flex */
+
+
+.container-flex {
+    display: flex;
+    background-color: aquamarine;
+    height: 30vh;
+    /* Par défaut les éléments dans le conteneur seront alignés horizontalement. */
+}
+
+.box-flex {
+    height : 20%; /* CA SERA 20 % du parent*/
+    /* width: calc(30vh*0.2); */
+    background-color: chocolate;
+    /* Pour éviter de calculer la largeur, on utilise une mise à l'échelle */
+    aspect-ratio: 1/1;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+
+.box-col{
+    width: 6vh;
+    aspect-ratio: 1/1;
+    background-color: crimson;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.end {
+    justify-content: end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+justify-content: space-evenly;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}

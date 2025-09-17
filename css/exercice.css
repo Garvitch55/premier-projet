@@ -1,0 +1,95 @@
+/*chargé la police d'écriture*/
+@font-face{
+    font-family: "Sansation";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+body{
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+.container-flex {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background-color: #fff;
+    border: dashed 2px #ccc;
+    gap: 1rem;
+    color: #fff;
+    /* Par défaut les éléments dans le conteneur seront alignés horizontalement. */
+}
+
+.box {
+    /* Permet d appelr les variables var ()*/
+    width: var(--square-size); 
+    aspect-ratio: 1/1;
+    margin-left: 10px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.box-flex-col{
+    border-radius: 10px;
+    width: 10%;
+    aspect-ratio: 1/1;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
+
+.col {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-flex-start {
+    align-items: flex-start;
+}
+
+.text {
+    text-align: center;
+    color: white;
+}
+
+
+/*Couleurs*/
+.red {background-color: red;}
+.blue{background-color: blue;}
+.green{background-color: green;}
+.orange{background-color: orange;}
+.purple{background-color: purple;}
+.teal {background-color: teal;}
+.pink{background-color: pink;}
+.brown{background-color: brown;}
+.gray{background-color: gray;}
+
+
+/* Les variables */
+
+:root {
+    /* Une variable permet de sauvegarder/nommer une couleur, une taille */
+    --yellow-color: #EAEE3F;
+    --orange-color: orange;
+    --cyan-color: cyan;
+    --square-size: 80px;
+}
