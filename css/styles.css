@@ -316,7 +316,7 @@ ___________.__
     margin-bottom: 1px;
 }
 
-.box-col{
+.box-flex-col{
     width: 6vh;
     aspect-ratio: 1/1;
     background-color: crimson;
