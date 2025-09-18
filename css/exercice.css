@@ -9,6 +9,17 @@ body{
     background-color: #f5f5f5;
 }
 
+
+/*
+___________                           .__                ____ 
+\_   _____/__  ___ ___________   ____ |__| ____  ____   /_   |
+ |    __)_\  \/  // __ \_  __ \_/ ___\|  |/ ___\/ __ \   |   |
+ |        \>    <\  ___/|  | \/\  \___|  \  \__\  ___/   |   |
+/_______  /__/\_ \\___  >__|    \___  >__|\___  >___  >  |___|
+        \/      \/    \/            \/        \/    \/        
+*/
+
+
 .container-flex {
     display: flex;
     width: 100%;
@@ -19,6 +30,16 @@ body{
     color: #fff;
     /* Par défaut les éléments dans le conteneur seront alignés horizontalement. */
 }
+
+h1 {
+    font-style: italic;
+    font: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
 
 .box {
     /* Permet d appelr les variables var ()*/
@@ -31,6 +52,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: center; 
     color: #fff;
 }
 
@@ -40,7 +62,9 @@ body{
     justify-content: center; /*Centrer dans la flex box sur la largeur */
     align-items: center; /*Centrer dans la flex box sur la hauteur */
     
-    border-radius: 10px;
+    
+
+border-radius: 10px;
     width: var(--square-size); 
     aspect-ratio: 1/1;
     margin-left: 1px;
@@ -52,7 +76,7 @@ body{
     flex-wrap: wrap;
 }
 
-.center {
+.center {background-color: #fff;
     justify-content: center;
 }
 
@@ -61,6 +85,8 @@ body{
 }
 
 .space-around {
+    background-color: #fff;
+    height: 60%;
     justify-content: space-around;
 }
 
@@ -99,3 +125,79 @@ body{
     --cyan-color: cyan;
     --square-size: 80px;
 }
+
+/*
+___________                           .__               ________  
+\_   _____/__  ___ ___________   ____ |__| ____  ____   \_____  \ 
+ |    __)_\  \/  // __ \_  __ \_/ ___\|  |/ ___\/ __ \   /  ____/ 
+ |        \>    <\  ___/|  | \/\  \___|  \  \__\  ___/  /       \ 
+/_______  /__/\_ \\___  >__|    \___  >__|\___  >___  > \_______ \
+        \/      \/    \/            \/        \/    \/          \/
+
+*/
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 75vh;
+    gap: 1rem;
+}
+
+.block-h40 {
+    display: flex;
+    height: 40%;
+    width: 100%;
+    gap: 1rem;
+}
+
+.block-h50 {
+    height: 50%;
+    width: 100%;
+    background-color: var(--cyan-color);
+}
+
+.block-h60 {
+    display: flex;
+    height: 60%;
+    width: 100%;
+    gap: 1rem;
+}
+
+.block-w20 {
+    height: 100%;
+    width: 20%;
+    background-color: var(--orange-color);
+}
+
+.block-w50 {
+    height: 100%;
+    width: 50%;
+}
+
+.block-w80 {
+    height: 100%;
+    width: 80%;
+    background-color: var(--yellow-color);
+}
+
+.block-orange {
+background-color: orange;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+
+
+                                                                  
+                                                                  
+                                                                  
+                                                                  
+                                                                  
