@@ -7,6 +7,8 @@ body{
     color: black;
 }
 
+
+/*Conteneur principale*/
 .contenaire {
     display: flex;
     flex-direction: column;
@@ -14,6 +16,15 @@ body{
     width: 100%;
     background-color: black;
     gap: 1rem;
+}
+
+.head{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+
 }
 
 .contenaire-body {
@@ -24,14 +35,9 @@ body{
 }
 
 
-.head{
-    display: flex;
-    height: 10%;
-    width: 100%;
-    gap: 1rem;
-    margin-top: 1rem;
 
-}
+
+/*Emplacement logo*/
 .logo{
     display: flex;
     justify-content: center;
@@ -42,6 +48,9 @@ body{
     margin-left: 1rem;
     border-radius: 5px;
 }
+
+
+/* Menu 1 nav*/
 
 .nav{
     display: flex;
@@ -77,7 +86,7 @@ body{
 
 
 
-
+/*Barre Input*/
 
 .input{
     display: flex;
@@ -121,6 +130,8 @@ body{
     font-weight: bold;
 }
 
+
+/*Menu 2 de gauche */
 .menu {
     display: flex;
     flex-direction: column;
@@ -142,6 +153,285 @@ body{
     padding: 0.5rem;
     margin-bottom: 2px;
 }     
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 80%;
+}
+
+
+/*Header Stat*/
+.main-head{
+    display: flex;
+    height:10%;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: var(--orange-color);
+    height:100%;
+    width: 60%;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.stat{
+    display: flex;
+    align-items: center;
+    height:100%;
+    width: calc(40%/3);
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-left: 0.5rem;
+}
+
+
+
+
+
+/*Conteneur LES TACHES A FAIRE EN COURS TERMINE*/
+.main-taches{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height:40%;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.taches1{
+    display: flex;
+    align-items: center;
+    height:15%;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.taches2{
+    display: flex;
+    align-items: center;
+    height:25%;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.taches3{
+    display: flex;
+    align-items: center;
+    height:15%;
+    width: 5%;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+
+.taches4{
+    display: flex;
+    align-items: center;
+    height:10%;
+    border-radius: 5px;
+    padding-left: 15px;
+
+}
+
+/*Conteneur box numbers*/
+
+.main-nombres{
+    display: flex;
+    flex-wrap: wrap;
+    height:30%;
+    width: 100%;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.box{
+display: flex;
+align-items: center;
+justify-content: center;
+width: calc(100%/4 - 0.40rem);
+border-radius: 5px;
+}
+
+
+/* Conteneur JAMBON BEURRE HAUT*/
+.main-foot{
+    display: flex;
+    height:20%;
+    width: 100%;
+    gap:0.5rem;
+}
+.box-foot1{
+display: flex;
+height:100%;
+width: calc(100%/3);
+}
+
+.jambon{
+display: flex;
+align-items: center;
+height:100%;
+width: 100%;
+border-radius: 5px;
+padding-left: 15px;
+}
+.beurre{
+display: flex;
+align-items: center;
+height:70%;
+width: 100%;
+border-radius: 5px;
+padding-left: 15px;
+}
+.haut{
+display: flex;
+align-items: center;
+height:50%;
+width: 100%;
+border-radius: 5px;
+padding-left: 15px;
+}
+
+.end{
+    align-items: end;
+}
+
+
+/*
+
+
+            <div class="profil">
+                <div class="main-profil">
+                    <div class="photo"></div>
+                    <div class="information-profil">PROFIL<br>Nom<br>Prénom</div>
+                    <div class="suivre">
+                            <input type="button" id="button3" value="Suivre"/>
+                    </div>
+                </div>
+                <div class="widget orange-fonce">Widget 1</div>
+                <div class="widget rouge-color">Widget 2</div>
+                <div class="widget rose-fonce">Widget 3</div>
+            </div>
+
+ */           
+
+
+
+
+/*Conteneur profil*/
+.profil {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 10%;
+    margin-right: 1rem;
+    gap: 0.5rem;
+}
+
+.main-profil{
+    display: flex;
+    align-items: center;
+    height: 12%;
+    width: 100%;
+    border-radius: 5px;
+        gap: 0.5rem;
+}
+
+
+.photo{
+    display:flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+#button3 {
+    height: 33%;
+    background-color: var(--vert-fonce);
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.suivre{
+    width: calc(100%/3);
+}
+
+
+.widget{
+    display: flex;
+    height: 6%;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+
+}
+
+
+
+
+
+
+
+/* Bas de page */
+.foot {
+    height:5%;
+    width: calc(100%*2rem);
+    display: flex;
+    background-color: blueviolet;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.text-start {
+display: flex;
+align-items: center;
+height: 100%;
+padding-left: 15px;
+}
+
+.text-end {
+display: flex;
+align-items: center;
+height: 100%;
+padding-right: 15px;
+}
+
+mark{
+
+}
+
+
+
+
+:root {
+    /* Une variable permet de sauvegarder/nommer une couleur, une taille */
+    --blue-color:rgba(36, 110, 231);
+    --violet-color:rgba(139, 92, 246);
+    --violet-clair-color: rgba(232, 121, 249);
+    --orange-fonce-color: rgba(249, 115, 22);
+    --orange-clair-color: rgba(252, 174, 120);
+    --cyan-color: rgba(56, 189, 248);
+    --cyan-clair:rgba(96, 165, 250);
+    --chartreuse:rgba(132, 204, 22);
+    --vert-clair:rgba(52, 211, 153);
+    --rouge-clair:rgba(251, 113, 133);
+    --vert-fonce:rgba(34, 197, 94);
+    --orange-color: rgba(245, 158, 11);
+    --rouge-color: rgba(239, 68, 68);
+    --rose-fonce: rgba(236, 72, 153)
+}
+
 
 .blue-color{
     background-color: var(--blue-color);
@@ -196,160 +486,3 @@ body{
     background-color: var(--chartreuse);
 }
 
-
-
-.main {
-    display: flex;
-    flex-direction: column;
-    height:100%;
-    width: 80%;
-}
-
-
-
-.main-head{
-    display: flex;
-    height:10%;
-    width: 100%;
-    margin-bottom: 0.5rem;
-}
-
-.header{
-    display: flex;
-    align-items: center;
-    background-color: var(--orange-color);
-    height:100%;
-    width: 60%;
-    border-radius: 5px;
-    padding-left: 15px;
-}
-.stat{
-    display: flex;
-    align-items: center;
-    height:100%;
-    width: calc(40%/3);
-    border-radius: 5px;
-    padding-left: 15px;
-    margin-left: 0.5rem;
-}
-
-
-
-
-
-
-
-.main-fait-afaire{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height:5%;
-    width: 100%;
-    margin-bottom: 0.5rem;
-    gap: 0.5rem;
-}
-
-.box-afaire{
-    display: flex;
-    align-items: center;
-    height:100%;
-    width: calc(100%/3-0.5rem*2);
-    border-radius: 5px;
-    padding-left: 10px;
-
-}
-
-
-
-.main-taches{
-    display: flex;
-    flex-direction: column;
-    height:35%;
-    width: 100%;
-    background-color: rgb(2, 0, 128);
-}
-
-.main-nombres{
-    display: flex;
-    flex-direction: column;
-    height:30%;
-    width: 100%;
-    background-color: rgb(0, 128, 107);
-}
-
-.main-foot{
-    display: flex;
-    flex-direction: column;
-    height:20%;
-    width: 100%;
-    background-color: rgb(128, 47, 0);
-
-
-}
-
-
-
-
-
-
-
-.profil {
-    display: flex;
-    flex-direction: column;
-    height:100%;
-    width: 10%;
-    background-color: yellow;
-    margin-right: 1rem;
-}
-
-
-.foot {
-    height:5%;
-    width: calc(100%*2rem);
-    display: flex;
-    background-color: blueviolet;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-}
-
-.text-left {
-height: 100%;
-width: 50%;
-background-color: cyan;
-
-}
-
-.text-right {
-height: 100%;
-width: 50%;
-background-color: rgb(255, 0, 212);
-text-align: left;
-}
-
-
-
-
-
-
-
-
-
-
-:root {
-    /* Une variable permet de sauvegarder/nommer une couleur, une taille */
-    --blue-color:rgba(36, 110, 231);
-    --violet-color:rgba(139, 92, 246);
-    --violet-clair-color: rgba(232, 121, 249);
-    --orange-fonce-color: rgba(249, 115, 22);
-    --orange-clair-color: rgba(252, 174, 120);
-    --cyan-color: rgba(56, 189, 248);
-    --cyan-clair:rgba(96, 165, 250);
-    --chartreuse:rgba(132, 204, 22);
-    --vert-clair:rgba(52, 211, 153);
-    --rouge-clair:rgba(251, 113, 133);
-    --vert-fonce:rgba(34, 197, 94);
-    --orange-color: rgba(245, 158, 11);
-    --rouge-color: rgba(239, 68, 68);
-    --rose-fonce: rgba(236, 72, 153)
-}
