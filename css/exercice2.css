@@ -234,7 +234,6 @@ body{
     height:10%;
     border-radius: 5px;
     padding-left: 15px;
-
 }
 
 /*Conteneur box numbers*/
@@ -429,7 +428,7 @@ mark{
     --vert-fonce:rgba(34, 197, 94);
     --orange-color: rgba(245, 158, 11);
     --rouge-color: rgba(239, 68, 68);
-    --rose-fonce: rgba(236, 72, 153)
+    --rose-fonce: rgba(236, 72, 153);
 }
 
 
