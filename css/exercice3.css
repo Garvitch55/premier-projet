@@ -1,0 +1,15 @@
+/* Pour enlever les margin et padding par défaut */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+}

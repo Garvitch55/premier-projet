@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--librairie js prism -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <link rel="stylesheet" href="css/position.css">
+    <title>Position et Overflows</title>
+</head>
+<body>
+    <h1>Positions et Overflows</h1>
+    <br>
+
+    <h2>1 - Les Positions</h2>
+    <br>
+    <div class="fixed-element">
+        <p>Elément fixe !!!!!!</p>
+    </div>
+
+    <br>
+    <h4>15. Position : Sticky</h4>
+
+
+    <h3>11 - Introduction</h3>
+    <p>La propriété CSS position permet de <b>contôler la manière dont un élément est positionné dans le document.</b></p>
+    <p>Elle détermine si un élément suit le flux normal du document ou si il est placé précisément avec les propiétés top, right, bottom et left.</p>
+    <br>
+
+    <h4>12. Position: Statique</h4>
+    <p>Comportement: L'élément suit le flux normal position  par défaut de tous les éléments HTML</p>
+    <p>top, right, bottom et left n'ont aucun effet si l'élément à cette propriété</p>
+    <br>
+        <p><b>Exemple :</b></p>
+        <br>
+            <div class="static"></div>
+
+            <pre>
+                <code class="language-css">
+                .static{
+                    height: 50px;
+                    width: 50px;
+                    background-color: blue;
+                    position: static;
+                }
+                </code>
+            </pre>
+    <br>
+
+
+    <div class="sticky">
+        <p>Je suis collant !!</p>
+    </div>
+
+
+    <h4>12. Position : Relative</h4>
+            <P>Comportement: L'élément est <b>positionné par rapport à sa position normale</b></p>
+            <p>Il occupe toujours sa place dans le flux du document</p>
+            <p>Les propriétés top, right, bottom et left, le déplace <b>visuellement</b>, sans changer sa place d'origine </p>
+
+                <div class="relative"></div>
+            <pre>
+                <code class="language-css">
+                .relative{
+                     height: 50px;
+                     width: 50px;
+                     background-color: blue;
+                     position: relative;
+                    top: 2rem;
+                    left: 3rem;
+                }
+                </code>
+    <div class="fixed-element">
+        <p>Elément fixe !!!!!!</p>
+    </div>
+
+    <br>
+    <h4>15. Position : Sticky</h4>
+
+            </pre>
+            <br>
+    <h4>13. Position : Absolue</h4>
+        <p>L'élément est retiré du flux</p>
+        <p>Il est postionné <b>par rapport au premier parent positionné</b> (non statique)</p>
+        <p>Si aucun parent n'est positionné, il se basera sur la balise "html"</p>
+        <br>
+
+        <p><b>Premier exemple avec un parent non positionné </b>(voir couleur green)</p>
+    
+    <div class="fixed-element">
+        <p>Elément fixe !!!!!!</p>
+    </div>
+
+    <br>
+    <h4>15. Position : Sticky</h4>
+
+            <div class="absolute-ophelan"></div>
+
+
+        <br>
+        <br>
+        <p><b>Deuxième exemple avec élément positionné</b></p>
+        <p> </p>
+        <div class="flex-overflow">
+            <div class="container-relative overflow">
+                <img src="img/magnifique_grol.jpeg" alt="Les chaussures usagées, mouillés">
+                <div class="title-product">
+                    <p>Magnifique Chaussure DGlace™</p>
+                </div>
+            </div>
+        </div>
+
+    <h4>14. Position : Fixe</h4>
+    <P>L'élément fixé <b>est tiré du flux</b>comme absolute</P>
+    <p>Mais il est postionné par rapport à la fenêtyre du navigateur</p>
+    <p>Il <b>ne bouge pas quand au scroll</b></p>
+
+
+    <div class="fixed-element">
+        <p>Elément fixe !!!!!!</p>
+    </div>
+
+    <br>
+    <h4>15. Position : Sticky</h4>
+    <p>Le comportement est un mixte entre relative et fixed</p>
+    <p>L'élément reste dans le flux jusqu'à ce qu'on scroll au point où il devient fixe</p>
+    <p><b>Le parent de l'élément sticky ne doit pas être en OVERFLOW: hidden; sinon le sticky ne fonctionne pas</b></p>
+
+
+
+</body>
+</html>
