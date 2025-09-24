@@ -1,3 +1,9 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,29 +13,34 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', sans-serif;;
+    font-family: 'Segoe UI', sans-serif;
     font-size: 10px;
-
 }
 
-* {
-    padding: 0;
-    margin: 0;
-}
 
 .header{
     display: flex;
-    width: 100%;
+    width: 98%;
     height: 10%;
     justify-content: space-between;
     align-items: center;
-    margin-left : 20px;
-    margin-right: 20px;    background-color: #fdf6ec;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #fdf6ec;
 }
+
+.header > p {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 
 nav {
     display: flex;
     align-items: center;
+    font-size: 15px;
 }
 
 nav > p {
@@ -46,6 +57,7 @@ nav > ul {
 .main1{
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -60,35 +72,109 @@ nav > ul {
     text-align: center;
 }
 
-.main1 >button{
+.main1 > button{
     background-color: #8bc34a;
     border: none;
     border-radius: 10px;
     color: white;
-    padding: 0.4rem 0.8rem;
+    padding: 0.8rem 1rem;
     font-size: 0.9rem;   
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+}
 
+.card > button{
+    background-color: #8bc34a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 88%;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    margin-left: 1rem;   
+    margin-right : 1rem;
+}
+
+.card > h2{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.overflow{
+    overflow: hidden;
+    height:60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+
+}
+
+.flex-overflow{
+    width: 100%;
+    height:100%;
+    display: flex;
+
+}
+
+.overflow > img{
+
+    min-width: 100%;
+   transform: translate(-20%, -20%);
+
+
+}
+
+
+
+
+
+.profile-pic-container {
+    position: absolute;
+    bottom: -50px;
+    right: 20px;
+
+}
+
+.profil-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid white 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
 
 .main2{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 55%;
+    background-color: #f4f1ea;
 
 }
 
 
 .footer{
     display: flex;
-    width: 100%;
+    width: 98%;
     height: 5%;
     background-color: #3e2723;
     justify-content: space-between;
     align-items: center;
-    padding-left : 20px;
-    padding-right: 20px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: white;
+    font-weight: bold;
 }
 
 nav2 {
@@ -103,7 +189,7 @@ nav2 > p {
 nav2 > ul {
     list-style: none;
     display: flex;
-    gap: 1rem
+    gap: 1rem;
 }
 
 
