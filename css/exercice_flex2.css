@@ -229,7 +229,7 @@ body{
 .taches4{
     display: flex;
     align-items: center;
-    height:10%;
+    height:10%;gap: ;
     border-radius: 5px;
     padding-left: 15px;
 
