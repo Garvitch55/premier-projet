@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Cours Responsive Design</title>
+</head>
+<body>
+<h1>Responsive Design</h1>
+<h2>1 - Qu'est-ce que le Responsive Design</h2>
+<P>Le <b>Responsive Design</b> (ou Design Adapatatif est la traduction en français) est une approche de conception web qui permet à un site de <b>s'adapter automatiquement à la taille de l'écran</b>.</P>
+<p>"ctrl+mj+m" pour mettre le menu adaptatif (pour choisir la dimension de l'écran de chaque appareil)</p>
+
+<h2>2 - Les breakpoints</h2> 
+<p>Un breakpoint est un seuil de <b>largeur</b> d'écran à partir du quel on modifie l'apparence de la page web afin de l'adapter au spport (mobile, tablette, desktop)</p>
+
+<h3>21 - Liste des breakpoints</h3>
+
+<ul>
+    <li>Mobile => max-width: 480px</li>
+    <li>Tablette => max-width: 768px</li>
+    <li>Laptop(ordinateur portable) => max-width: 1024px</li>
+    <li>Desktop (les tours PC) => max-width: 1025px</li>
+</ul>
+
+<h3 class="warning">22 - Attention !!!</h3>
+
+<p>La résolution des écrans en CSS est représenté en <b>pixel logique</b>.</p>
+<p>Dans la réalité les appareils sont en pixel physiques.</p>
+<p>Par exemple un Iphone 13 à une résolution logique de 398 x 844 pixels mais en réalité elle à une résolution physique de 2532 x 1170px.</p>
+<p>Par exemple pour un écran Retina 3 pixels physqiues pour 1 pixel logique.</p>
+
+<h2>3 - Principes fondamentaux du Responsive Design</h2>
+<p>Utilisation des <b>%</b> ou <b>vh/vw</b> au lieu de valeurs fixes comme pixel(px).</p>
+<p>Utiliser des propriétés tel que <i>max-width: 100%</i> pour que les images ne dépassent jamais leur conteneur</p>
+<p>Les média queries => Ce sont des instructions qui aplliquent des styles en fonction de la taille de l'écran.</p>
+
+<h2>4 - Les flexbox</h2>
+<p>L'utilisation du wrap est maintenant très importante.</p>
+<p>Actuellement nous vivons dans un monde ou les téléphones portables sont omniprésents, il est conseillé maintenant de concevoir son site en MOBILE FIRST.</p>
+<P>Le mobile first est un concept de web design optimisé pour le mobile, il consiste à concevoir un site en mettant <b>la propriété sur la version mobile</b> et ensuite d'adapter le site progressivement sur des écrans plus larges</P>
+
+
+<div class="container">
+    <div class="box blue"></div>
+    <div class="box orange"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</div>
+
+<hr>
+
+<div class="container">
+    <div class="box blue order1"></div>
+    <div class="box orange order2"></div>
+    <div class="box green order3"></div>
+    <div class="box blue order4"></div>
+</div>
+
+
+
+</body>
+</html>
