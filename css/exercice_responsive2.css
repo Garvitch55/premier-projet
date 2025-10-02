@@ -1,0 +1,240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu1{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    background-color:  #222222;
+    position: fixed;
+}
+
+.menu1 > ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+.menu1 > ul li{
+    display: flex;
+}
+.menu1 ul>li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+main{
+    padding-top: 45px;;
+    gap:1rem;
+}
+
+.cartes{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    gap: 1rem;
+}
+
+.carte{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    border: 1px solid #cccccc;
+    gap:0.5rem;
+    border-radius: 5px;
+}
+
+.carte>img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.menu2-color{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    width: calc(100% - 2rem);
+    align-items: center;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.menu2-color>h2{
+    padding-top: 1rem;
+    display: flex;
+}
+
+
+
+.menu2{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+
+}
+
+.menu2 > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+.menu2 > ul li{
+    display: flex;
+    margin-bottom: 0.5rem;
+    background-color: #dddddd;
+    padding:0.5rem;
+    border-radius: 5px;
+}
+
+.menu2 ul>li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.widget{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    margin: 1rem;
+    width: calc(100% - 2rem); 
+    border-radius: 5px;
+}
+
+.widget>h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.widget>a{
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.order1{
+    order: 1;
+}
+
+.order2{
+    order: 2;
+}
+
+.order3{
+    order: 3;
+}
+
+@media screen and (min-width: 600px) {
+
+.cartes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.carte{
+    display: flex;
+    width: calc(50% - 3rem);
+}
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+main{
+    display: flex;
+}
+
+
+.order1{
+    order: 2;
+}
+
+.order2{
+    order: 1;
+}
+
+.order3{
+    order: 3;
+}
+
+.menu2-color{
+width: 25%;
+}
+
+.widget{
+width: 25%;
+}
+
+.carte{
+    display: flex;
+    width: calc(100% / 3 - 3rem);
+}
+
+.menu2 > ul{
+    width: 60%;
+    
+}
+
+.menu2 ul>li a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    padding-left: 20px;
+    font-weight: bold;
+}
+    
+
+
+
+
+.menu2-color>H2{
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+
+.widget>H2{
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+.widget>a{
+    font-size: 22px;
+}
+}
