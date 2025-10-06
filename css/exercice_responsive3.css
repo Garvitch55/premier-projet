@@ -125,7 +125,6 @@ main{
     border-top-right-radius: 5px;
 }
 
-
 aside{
     display: flex;
     flex-direction: column;
@@ -133,15 +132,8 @@ aside{
     background-color: #f0f0f0;
     border: 1px solid #dddddd;
     border-radius: 5px;
+    height: 100%;
 }
-
-
-
-
-
-
-
-
 
 aside > ul{
     list-style: none;
@@ -149,8 +141,7 @@ aside > ul{
     flex-direction: column;
     width: 100%;
     font-size: 14px;
-    padding-top: 20px;
-    padding-left: 15px;
+    padding:15px;
     gap:1rem;
 }
 
