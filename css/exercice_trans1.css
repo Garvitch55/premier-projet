@@ -13,28 +13,108 @@ body{
     justify-content: center;
     color: white;
 }
+.container-overflow{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    width: 35%;
+    height: 200px;
+    border-radius: 10px;
 
+}
 
 .carte-vue{
     display: flex;
-    position: relative;
     flex-direction: column;
-    width: 35%;
-    aspect-ratio: 2/1;
+    width: 100%;
+    height:200px;
     background-color: #3398d9;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    padding: 1rem;
+    gap:1rem;
 }
 
-.carte-animation{
+
+.carte-vue h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.carte-vue p{
+    font-size: 20px;
+}
+
+.qui-monte{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: 0px;
-    left:0px;
+    height: 400px;
+    top: 0;
+    left:0;
+
+}
+.carte-animation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
     background-color: #102e42;
     opacity: 0.6;
     border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding:1rem;
+    gap:1rem;
+    
+
 }
 
 
+.qui-monte:hover{
+
+animation-name: carte-bouge;
+    /* temps que dure l'animation */
+    animation-duration: 5s;
+    /* La courbe de vitesse de l'animation */
+    /* animation-timing-function: cubic-bezier(0.32,.35,1,-0.09); */
+    /* Le nombre de fois que l'animation est joué */
+    animation-iteration-count: 1;
+    /* Est-ce que cette animation s'inverse à la fin ou pas */
+    animation-direction: alternate;
+
+
+}
+/* 
+.saw-animation{
+    width: 150px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: rotate(0deg);
+    animation-name: saw-move;
+    /* temps que dure l'animation */
+    /* animation-duration: 5s; */
+    /* La courbe de vitesse de l'animation */
+    /* animation-timing-function: cubic-bezier(0.32,.35,1,-0.09); */
+    /* Le nombre de fois que l'animation est joué */
+    /* animation-iteration-count:; */
+    /* Est*ce que cette animation s'inverse à la fin ou pas */
+    /* animation-direction: alternate; */
+ 
+
+@keyframes carte-bouge {
+
+100% {
+top: -200px;
+left: 0;
+}
+
+}
